@@ -1,0 +1,13 @@
+# combine monthly ngram counts
+DATA_DIR=../../data/frequency
+TIMEFRAME=2013_2016
+# N=2
+N=3
+# NGRAM_POS=0
+NGRAM_POS=1
+# NGRAM_POS=2
+NGRAM_COUNTS=($DATA_DIR/2013-06_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2013-07_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2013-08_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2013-09_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2013-10_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2013-11_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2013-12_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2014-01_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2014-02_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2014-03_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2014-04_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2014-05_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2014-06_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2014-07_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2014-08_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2014-09_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2014-10_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2014-11_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2014-12_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2015-01_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2015-02_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2015-03_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2015-04_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2015-05_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2015-06_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2015-07_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2015-08_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2015-09_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2015-10_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2015-11_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2015-12_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2016-01_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2016-02_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2016-03_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2016-04_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv $DATA_DIR/2016-05_unique_"$N"gram_"$NGRAM_POS"pos_counts.tsv)
+OUT_FILE=$DATA_DIR/"$TIMEFRAME"_"$N"gram_"$NGRAM_POS"pos_counts.tsv
+OUTPUT=../../output/"$TIMEFRAME"_"$N"gram_"$NGRAM_POS"pos_count_combine.txt
+AXIS=1
+(python ../data_processing/combine_dataframes.py "${NGRAM_COUNTS[@]}" $OUT_FILE --axis $AXIS > $OUTPUT)&

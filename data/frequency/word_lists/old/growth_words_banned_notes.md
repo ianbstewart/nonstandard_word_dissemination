@@ -1,0 +1,1 @@
+The file growth_words_banned.csv contains an open list of words that increased significantly in frequency from 2015-2016 but are not of interest to this project. This includes proper nouns ("Nevada"), political words ("elections"), and non-English words ("das").

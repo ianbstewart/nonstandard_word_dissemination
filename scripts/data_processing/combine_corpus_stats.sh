@@ -1,0 +1,7 @@
+DATA_DIR=../../data/metadata
+CORPUS_STATS=($DATA_DIR/2013-06_corpus_stats.tsv $DATA_DIR/2013-07_corpus_stats.tsv $DATA_DIR/2013-08_corpus_stats.tsv $DATA_DIR/2013-09_corpus_stats.tsv $DATA_DIR/2013-10_corpus_stats.tsv $DATA_DIR/2013-11_corpus_stats.tsv $DATA_DIR/2013-12_corpus_stats.tsv $DATA_DIR/2014-01_corpus_stats.tsv $DATA_DIR/2014-02_corpus_stats.tsv $DATA_DIR/2014-03_corpus_stats.tsv $DATA_DIR/2014-04_corpus_stats.tsv $DATA_DIR/2014-05_corpus_stats.tsv $DATA_DIR/2014-06_corpus_stats.tsv $DATA_DIR/2014-07_corpus_stats.tsv $DATA_DIR/2014-08_corpus_stats.tsv $DATA_DIR/2014-09_corpus_stats.tsv $DATA_DIR/2014-10_corpus_stats.tsv $DATA_DIR/2014-11_corpus_stats.tsv $DATA_DIR/2014-12_corpus_stats.tsv $DATA_DIR/2015-01_corpus_stats.tsv $DATA_DIR/2015-02_corpus_stats.tsv $DATA_DIR/2015-03_corpus_stats.tsv $DATA_DIR/2015-04_corpus_stats.tsv $DATA_DIR/2015-05_corpus_stats.tsv $DATA_DIR/2015-06_corpus_stats.tsv $DATA_DIR/2015-07_corpus_stats.tsv $DATA_DIR/2015-08_corpus_stats.tsv $DATA_DIR/2015-09_corpus_stats.tsv $DATA_DIR/2015-10_corpus_stats.tsv $DATA_DIR/2015-11_corpus_stats.tsv $DATA_DIR/2015-12_corpus_stats.tsv $DATA_DIR/2016-01_corpus_stats.tsv $DATA_DIR/2016-02_corpus_stats.tsv $DATA_DIR/2016-03_corpus_stats.tsv $DATA_DIR/2016-04_corpus_stats.tsv $DATA_DIR/2016-05_corpus_stats.tsv)
+AXIS=1
+TIMEFRAME=2013_2016
+OUT_FILE=$DATA_DIR/"$TIMEFRAME"_corpus_stats.tsv
+OUTPUT=../../output/"$TIMEFRAME"_corpus_stats.txt
+(python combine_dataframes.py "${CORPUS_STATS[@]}" --out_file $OUT_FILE --axis $AXIS > $OUTPUT)&

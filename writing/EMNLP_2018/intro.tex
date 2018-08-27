@@ -1,0 +1,59 @@
+\section{Introduction}
+
+\textit{Stop trying to make ``fetch'' happen! It's not going to happen!} -- Regina George (\emph{Mean Girls}, 2005) \vspace{8pt}
+
+With the fast-paced and ephemeral nature of online discourse, language change in online writing is both prevalent~\cite{androutsopoulos2011} and noticeable~\cite{squires2010enregistering}. 
+In social media, new words emerge constantly to replace even basic expressions such as laughter: today's \example{haha} is tomorrow's \example{lol}~\cite{tagliamonte2008}. 
+%The rise of such lexical innovations may reflect social trends in an online community such as the turnover of new members or the response to a content ban~\cite{danescu2013,chancellor2016moderation}. 
+%The reasons for such changes are various: adopting new words may be used to signal familiarity with the latest trends in a community~\cite{bucholtz1999}, 
+%%they may represent the orthographic representation of an existing spoken vernacular~\cite{eisenstein2015systematic} 
+%or they may even result from an exogenous shock, such as the censorship of related terms~\cite{chancellor2016moderation}.
+%But while analysis of specific causes for change can offer insights, we must also address a more basic set of questions. 
+Why do some nonstandard words, like \example{lol}, succeed and spread to new contexts, while others, like \example{fetch}, fail to catch on? 
+Can a word's growth be predicted from patterns of usage during its early days?
+
+Language change
+%, and lexical change in particular, 
+can be treated like other social innovations, such as the spread of hyperlinks~\cite{bakshy2011everyone} or hashtags~\cite{romero2011differences,tsur2015}.
+A key aspect of the adoption of a new practice is its \emph{dissemination}: is it used by many people, and in many social contexts?
+%\newcite{altmann2011} compute dissemination across online newsgroups, finding that words with high early diffusion tend to succeed.
+High dissemination enables words to achieve greater exposure among social groups~\cite{altmann2011}, and may signal that the innovation is positively evaluated.
+
+%But while language change shares some properties with other social innovations, it is also bound by the constraints of the language's grammar~\cite{darcy2015}.
+In addition to social constraints, language change is also shaped by grammatical constraints~\cite{darcy2015}.
+New words and phrases rarely change the rules of the game but must instead find their place in a competitive ecosystem with finely-differentiated linguistic roles, or ``niches''~\cite{macwhinney1989}.
+Some words become valid in a broad range of linguistic contexts, while others remain bound to a small number of fixed expressions.
+%These structural properties may play a crucial role in determining whether a word will grow or decline.
+We therefore posit a structural analogue to social dissemination, which we call \emph{linguistic dissemination}.
+%We compare the fates of such words to determine how linguistic and social dissemination each relate to word growth.
+
+We compare the fates of such words to determine how linguistic and social dissemination each relate to word growth, focusing on the adoption of nonstandard words in the popular online community Reddit.
+The following hypotheses are evaluated:
+\vspace{-1pt}
+\begin{itemize}
+  \setlength\itemsep{0pt}
+  \setlength\parskip{0pt}
+\item \textbf{H1: Nonstandard words with higher initial social dissemination are more likely to grow.} 
+%Previous work has found conflicting effects of social dissemination on word growth:~\newcite{garley2012} report a negative correlation between dissemination and frequency change, while~\newcite{altmann2011} report a positive correlation.
+Following the intuition that words require a large social base to succeed, we hypothesize a positive correlation between social dissemination and word growth. 
+\item \textbf{H2-weak: Nonstandard words with higher linguistic dissemination in the early phase of their history are more likely to grow.} 
+This follows from work in corpus linguistics showing that words and grammatical patterns with a higher diversity of collocations are more likely to be adopted~\cite{ito2003,partington1993}.
+\item \textbf{H2-strong: Nonstandard words with higher linguistic dissemination are more likely to grow, even after controlling for social dissemination.}
+This follows from the intuition that linguistic context and social context contribute differently to word growth. 
+%\item H3: Context diversity and social dissemination contribute equally to likelihood of innovation success.
+%Study of language variation has long acknowledged the separate effects of linguistic context and social context on language variation~\cite{metcalf2004}.
+%Our work compares the relative importance of linguistic context with the importance of social context on the success of innovations.
+\end{itemize}
+
+%Our study departs from previous work by comparing successful words with failing words, rather than looking at success alone.
+To address H2, we develop a novel metric for characterizing linguistic dissemination, by comparing the observed number of $n$-gram contexts to the number of contexts that would be predicted based on frequency alone.
+Our analysis of word growth and decline includes: (1) prediction of frequency change in growth words (as in prior work); (2) causal inference of the influence of dissemination on probability of word growth; (3) binary prediction of future growth versus decline; and (4) survival analysis, to determine the factors that predict when a word's popularity begins to decline.
+All tests indicate that linguistic dissemination plays an important role in explaining the growth and decline of nonstandard words.
+%This opens up questions for future work regarding more nuanced versions of linguistic context diversity as predictors of slang word success.
+
+%We present the following contributions:
+%
+%\begin{enumerate}
+%\item A method of characterizing lexical competition with a combination of frequency and semantic metrics.
+%\item A comparison of social, linguistic and contextual factors in predicting lexical success.
+%\end{enumerate}

@@ -1,0 +1,23 @@
+tag	meaning
+N	common noun
+^	proper noun
+V	verb
+A	adjective
+R	adverb
+G	abbreviation/foreign word/possessive ending/symbol/garbage
+!	interjection
+P	preposition/postposition
+O	pronoun
+L	nominal+verbal/verbal+nominal
+D	determiner
+$	numeral
+&	conjunction
+E	emoticon
+Z	proper noun+possessive
+,	punctuation
+S	nominal+possessive
+T	verb particle
+~	discourse marker
+U	URL/email
+X	existential there/predeterminer
+Y	X+verbal

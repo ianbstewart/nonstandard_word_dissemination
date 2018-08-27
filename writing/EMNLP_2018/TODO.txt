@@ -1,0 +1,10 @@
+- rewording: prediction -> matched comparison of dissemination
+- rewording: context dissemination -> versatility (Kneser-Key term); D^C => D^L
+- rewording: eliminating "topical" words
+- analysis: report 1<k<5 matched comparison results with ~extra space~
+- analysis: sample 200 high-growth words, two annotators label for growth category, high-topical, noise
+- analysis: counts for categories
+- analysis: significance test between f+S, f+C model 
+- rewriting: in related work => make "social dissemination" more generic; add section for "change in online norms" (e.g., Kooti RT stuff, LaTeX macro competition)
+- rewriting: more emphasis on survival analysis
+- rewriting: interesting in word popularity growth over time >>> "innovation"

@@ -1,0 +1,1 @@
+2015_2016_growth_word_categories_spearman.csv comprises all words that had a maximum early frequency of 1.361E-7 (10th percentile in the first 3 months) and a minimum Spearman's correlation coefficient of 0.391 (80th percentile, computed over all months). Experiments in scripts/frequency/growth_word_comparisons.ipynb. All decisions final.

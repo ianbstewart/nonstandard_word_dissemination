@@ -1,0 +1,1 @@
+2015_2016_growth_word_categories_spearman_ci.csv comprises all non-proper nouns and non-topical (election-based) words that have a Spearman correlation coefficient greater than 1 CI above the mean (i.e. above 0.4077).

@@ -1,0 +1,77 @@
+\section{Discussion}
+
+%\subsection{Discussion}
+
+%%Although social dissemination appears to play a nontrivial role in differentiating growth from decline words, the role of context diversity appears more important and worthy of investigation. 
+%The consistent difference in context diversity between growth and decline innovations suggest a more general idea of a lexical ``lifecycle.''
+%If we assume that most lexical innovations undergo a lifecycle of adoption and abandonment~\cite{danescu2013}, then the previously defined ``growth'' and ``decline'' words would represent the beginning and the end of the cycle.
+%To further study the role of context diversity in this cycle, we now investigate words that were adopted and later abandoned in the same timeframe as the growth and decline words.
+
+%All four quantitative analyses find a strong role for linguistic dissemination as a positive predictor in the nonstandard word growth: it was the strongest predictor of monthly frequency changes in growth words, the best differentiator of growth and decline words in causal and predictive tasks, and the most effective warning sign that a word is about to decline.
+All four analyses support H2: linguistic dissemination was the strongest predictor of monthly frequency changes in growth words, the best differentiator of growth and decline words in causal and predictive tasks, and the most effective warning sign that a word is about to decline.
+%H2 and its stronger form, H2a, are well supported by these analyses. 
+Linguistic dissemination can be related to theories such as the FUDGE factors~\cite{chesley2010,cook2010neologism,metcalf2004}, in which a word's growth depends on frequency (F), unobtrusiveness (U), diversity of users and situations (D), generation of other forms and meanings (G), and endurance (E). 
+Linguistic dissemination provides an example of ``diversity of situation.'' 
+
+The effectiveness of linguistic dissemination is exemplified in pairs of semantically similar growth and decline words.
+In the first $k=3$ months of growth, the growth word \example{kinda} has a relatively high ratio of linguistic to frequency ($\frac{D^{L}}{f}=0.270$) as compared with the semantically similar decline word \example{sorta} (0.055).
+This pattern holds for other pairs of semantically similar words: \example{fuckwit} and \example{fuckboy}; \example{lolno} and \example{lmao}; \example{yup} and \example{yas}.
+While not exhaustive, such a trend suggests that the growth words were able to reach a wider range of lexical contexts and therefore succeed where the decline words failed.
+% scripts/prediction/qualitative_analysis_growth_decline_words.ipynb#Compare-ratio-of-dissemination/frequency
+
+Regarding H1, we generally found a positive role for social dissemination as well, although these results were not consistent across all metrics and tests, particularly in the survival analysis.
+%Furthermore, the social dissemination features were relatively ineffective in the survival analysis.
+This matches the conclusion from~\newcite{garley2012}, who argued that social dissemination is less predictive of word adoption than~\newcite{altmann2011} originally suggested.
+One possible explanation is the inclusion of word categories such as proper nouns in the analysis of \newcite{altmann2011}; the dissemination of such terms may rely on social dynamics more than the dissemination of nonstandard terms.
+%Another explanation is the focus of~\newcite{garley2012} on loanwords rather than native words, because loanwords could be more socially salient~\cite{poplack1988}.
+The lower predictive power of thread and user dissemination is also interesting and suggests that subreddits are more socially salient in terms of exposing nonstandard words to potential adopters.
+%due to their obvious difference from native words~\cite{poplack1988}.
+
+%We have found evidence that not all generative factors behave the same, as bigram and trigram context diversity are correlated different with growth innovations versus decline innovations.
+
+%\ian{add summary of social vs. linguistic factors in word adoption; suggestion for more sophisticated measures of context e.g. syntactic context}
+
+%Outside of language-specific work, it would be interesting to extend the idea of context diversity to explain more complicated innovations such as memes~\cite{leskovec2009}. 
+%For instance, can the long-term success of a meme be predicted based on the diversity of semantic contexts in which it is used?
+%This relates to the idea of templatability~\cite{rintel2013}, or the ability to extend a meme to contexts beyond its originally intended meaning (e.g., adding a new text macro to the same meme image).
+
+%Monitoring lexical replacement can be applied to a variety of situations, such as tracking drug use on social media through the adoption of new drug terminology~\cite{sarker2016}. 
+%It may also lead to insight about unexpected trends within a community, including replacement of a neutral word by a politically charged word with a similar meaning (e.g., \example{liberals} to \example{libtards}). 
+
+%\subsection{Future work}
+
+%Evaluating the ability of our approach to capture lexical competition and replacement in social media is difficult, because of the lack of consensus over which words in social media have equivalent meaning. 
+%Unlike historical data which may be evaluated by domain experts~\cite{kenter2015}, social media data does not have a clear set of experts who can readily judge which words were replaced. 
+%Even ``official'' lists such as the American Dialect Society's yearly slang compilation~\cite{zimmer2014} may only identify the most notable replacements and may overlook more subtle changes, such as \example{cringy} overtaking \example{cringeworthy}. 
+%This work relies partly on subjective procedures to identify lexical innovations in a way that may limit replicability. 
+%The identification of innovations that may be facilitated by morphological analysis, such as the automatic detection of lexical blends through a character-level model~\cite{cook2010}.
+%Future work may also find it productive to consult less formal resources such as the Urban Dictionary to verify whether a particular word constitutes an innovation~\cite{grieve2016}.
+%Another interesting route would be to consult online community members directly for their intuition on emerging slang\footnote{http://nymag.com/thecut/2016/03/guide-to-new-teen-slang.html}, which may reveal insight on the social value of innovations.
+
+%In this work we examine the social and semantic influence on lexical innovation success, but we cannot rule out exogenous influences, such as current events, on success~\cite{kershaw2016}.
+%We try to control for this by considering only lexical innovations that are not proper nouns and not topical, which we assume are less influenced by exogenous forces.
+%It may be possible to control for exogenous effects by filtering for words that have a gradual growth and ignoring words that emerge through a sudden spike in frequency.
+% ignoring innovations that emerge through a sudden spike in frequency, instead of the expected gradual increase in frequency.
+
+\paragraph{Limitations}
+
+One limitation in the study was the exclusion of orthographic and morphological features such as affixation, which has been noted as a predictor of word growth~\cite{kershaw2016}.
+%We chose to focus on the effect of dissemination, but further study should compare the relative importance of these different factors.
+%, possibly under the FUDGE framework (e.g., affixation represents ``Generation of other forms'').
+Future work should incorporate these features as additional predictors.
+Our study also omitted borrowings, unlike prior work in word adoption that has focused on borrowings~\cite{chesley2010,garley2012}.
+Our early language-filtering steps eliminated most non-English words from the vocabulary, although it would have been interesting to examine loanword use in English-language posts.
+Finally, our study was limited by the focus on nonstandard words rather than memetic phrases (e.g., \example{like a boss}) which may show a similar correlation between dissemination, growth and decline~\cite{bybee2006}.
+
+\paragraph{Future work} 
+We approximate linguistic dissemination using trigram counts, because they are easy to compute and they generalize across word categories. 
+In future work, a more sophisticated approach might estimate linguistic dissemination with syntactic features such as appearance across different phrase heads~\cite{kroch1989,ito2003} or across nouns of different semantic classes~\cite{darcy2015}.
+%However, the poor performance of automatic parsers on social media data~\cite{eisenstein2013,blodgett2016} and the limits of manual annotation may render this typical analysis difficult or impossible. 
+%the analysis of ``noisy'' social media data requires a more generalized approach that does not rely on sophisticated but brittle NLP systems such as parsers~\cite{eisenstein2013}. 
+Future work should also investigate more semantically-aware definitions of linguistic dissemination.
+%, such as dissemination of intensifiers across different types of adjectives~\cite{ito2003}. 
+The existence of semantic ``neighbors'' occurring in similar contexts (e.g., the influence of standard intensifier \example{very} on nonstandard intensifier \example{af}) may prevent a new word from reaching widespread popularity~\cite{grieve2018}.
+
+%something about intrinsic word embedding evaluation? need intrinsic rather than extrinsic because we can't expect crowdsourcing (e.g.~\cite{schnabel2015}) to handle new words, unless we have access to new word resources such as Urban Dictionary
+
+%another lens for semantic variation: not just adoption of ``cool'' words but also result of turnover in community, e.g. use of ``awesome''~\cite{robinson2010}

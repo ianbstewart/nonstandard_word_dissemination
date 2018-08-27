@@ -1,0 +1,22 @@
+\section{Related Work}
+
+\paragraph{Lexical change online}
+
+Language changes constantly, and one of the most notable forms of change is the adoption of new words~\cite{metcalf2004}, sometimes referred to as lexical entrenchment~\cite{chesley2010}.
+New nonstandard words may arise through the mutation of existing forms by processes such as truncation (e.g, \example{favorite} to \example{fave};\nocite{grieve2016} Grieve et al., 2016) and blending (e.g., \example{web}+\example{log} to \example{weblog} to \example{blog};\nocite{cook2010blend} Cook and Stevenson, 2010). 
+The fast pace and interconnected nature of online communication is particularly conducive to innovation, and social media provides a ``birds-eye view'' on the process of change~\cite{danescu2013,kershaw2016,tsur2015}.
+
+The most closely related work is a contemporaneous study that explored the role of weak social ties in the dissemination of linguistic innovations on Reddit, which also proposed the task of quantitatively predicting the success or failure of lexical innovations~\cite{tredici2018}.
+One distinguishing feature of our work is the emphasis on \emph{linguistic} (rather than social) context in explaining these successes and failures. In addition to predicting the binary distinction between success and failure, we also take on the more fine-grained task of predicting the length of time that each innovation will survive.
+
+\paragraph{Social dissemination}
+Language changes as a result of transmission across generations~\cite{labov2007} as well as diffusion across individuals and social groups~\cite{bucholtz1999}.
+Such diffusion can be quantified with \emph{social dissemination}, which \newcite{altmann2011} define as the count of social units (e.g., users) who have adopted a word, normalized by the expected count under a null model in which the word is used with equal frequency across the entire population.
+\newcite{altmann2011} use dissemination of words across forum users and threads to predict the words' change in frequency in Usenet, finding a positive correlation between frequency change and both kinds of social dissemination.
+In contrast, \newcite{garley2012} use the same metric to predict the growth of English loanwords on German hip-hop forums, and find that social dissemination has less predictive power than expected.
+We seek to replicate these prior findings, and to extend them to the broader context of Reddit.
+
+\paragraph{Linguistic dissemination}
+In historical linguistics, the distribution of a new word or construction across lexical contexts can signal future growth~\cite{partington1993}.
+Furthermore, grammatical and lexical factors can explain a speaker's choice of linguistic variant~\cite{ito2003,cacoullos2009} and can provide more insight than social factors alone.
+Our study proposes a generalizable method of measuring the dissemination of a word across lexical contexts with \emph{linguistic} dissemination and compares social and linguistic dissemination as predictors of language change.

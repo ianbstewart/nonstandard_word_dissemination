@@ -1,0 +1,2 @@
+# Notes
+The growth words in 2014_2016_growth_word_categories_ratio.csv were manually inspected to filter non-proper nouns and were generated from the full vocabulary of words that (1) had a ratio of late $t_{9:11}$ to early $t_{0:2}$ frequency > 1.0 , (2) had a mean frequency from $t_{9:11}$ above a threshold $f=1e-5$ and (3) appeared in (a mean of) at least 5 subreddits from $t_{9:11}$. This was meant to isolate the actual "successful" words from the topical words.

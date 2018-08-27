@@ -1,0 +1,23 @@
+# outlining the paper
+
+Intro
+- lexical niche is understood as either semantic or social construction...we need to compare the influence of both semantics and social
+Related
+- neologisms in social media
+- niche
+- distributional semantics
+Data
+- Reddit comments (not posts! because posts more likely to have biased/attention-seeking vocab)
+- filtering spam users, non-English subs
+- about 600 million comments, YYY tokens
+- unique users and subreddits?
+Methods
+- computing frequency, user/subreddit percentages
+- word embeddings (include wang2vec?)
+- defining lexical niche and/or competition (combination of frequency and semantics)
+Results
+- predicting success based on social, semantic distinctiveness
+Discussion
+- importance of niche 
+- social vs. semantic life of word
+Conclusion
