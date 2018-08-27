@@ -30,6 +30,12 @@ The scripts have the following dependencies:
     - sklearn
     - statsmodels
     - nltk
+    - lifelines
+    - langid
+    - stopwords
 - R
     - relaimpo
     - causaldrf
+    - survival
+- notebook
+    - jupyter-notebook
