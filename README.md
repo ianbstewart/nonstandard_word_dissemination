@@ -1,7 +1,7 @@
 # Nonstandard word dissemination
 This repository accompanies the 2018 EMNLP paper concerning dissemination of nonstandard words online.
 
-I. Stewart and J. Eisenstein. Making "fetch" happen: The influence of social and linguistic context on nonstandard word growth and decline. Proceedings of EMNLP 2018. [Paper here](https://arxiv.org/abs/1709.00345).
+I. Stewart and J. Eisenstein. Making "fetch" happen: The influence of social and linguistic context on nonstandard word growth and decline. Proceedings of EMNLP 2018. [Paper here](http://aclweb.org/anthology/D18-1467).
 
 ## Structure
 - data/
