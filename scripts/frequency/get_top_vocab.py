@@ -31,6 +31,8 @@ def main():
     top_vocab = totals.loc[valid_words][:top_k]
     top_vocab = pd.DataFrame(top_vocab, columns=['count'])
     print('got %d vocab'%(len(top_vocab)))
+    # renormalize
+    top_vocab.loc[:, 'count'] = top_vocab.loc[:, 'count'] / top_vocab.loc[:, 'count'].sum(axis=0)
     out_dir = os.path.dirname(tf_file)
     out_fname = os.path.join(out_dir, '%s_top_%d_vocab.tsv'%(timeframe,top_k))
     top_vocab.to_csv(out_fname,sep='\t')
